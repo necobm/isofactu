@@ -11,6 +11,46 @@ class InvoiceNumber
 {
     #[Column(type: Types::STRING, length: 100, nullable: true)]
     private ?string $serial = null;
+
     #[Column(type: Types::STRING, length: 100)]
-    private string $number;
+    private string $number = '';
+
+    public function __construct(string $number, ?string $serial = null)
+    {
+        $this->number = $number;
+        $this->serial = $serial;
+    }
+
+    public function getSerial(): ?string
+    {
+        return $this->serial;
+    }
+
+    public function setSerial(?string $serial): static
+    {
+        $this->serial = $serial;
+
+        return $this;
+    }
+
+    public function getNumber(): string
+    {
+        return $this->number;
+    }
+
+    public function setNumber(string $number): static
+    {
+        $this->number = $number;
+
+        return $this;
+    }
+
+    public function __toString(): string
+    {
+        if ($this->serial !== null && $this->serial !== '') {
+            return sprintf('%s-%s', $this->serial, $this->number);
+        }
+
+        return $this->number;
+    }
 }
