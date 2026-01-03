@@ -102,12 +102,15 @@ class InvoiceLine
 
     public function getTaxAmount(): string
     {
-        return bcmul($this->getSubtotal(), bcdiv($this->taxRate, '100', 4), 2);
+        $subtotal = $this->getSubtotal();
+        return bcmul($subtotal, bcdiv($this->taxRate, '100', 4), 2);
     }
 
     public function getTotal(): string
     {
-        return bcadd($this->getSubtotal(), $this->getTaxAmount(), 2);
+        $subtotal = $this->getSubtotal();
+        $taxAmount = bcmul($subtotal, bcdiv($this->taxRate, '100', 4), 2);
+        return bcadd($subtotal, $taxAmount, 2);
     }
 
     public function __toString(): string

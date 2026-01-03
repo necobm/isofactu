@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Entity\DocumentType;
 use App\Entity\ValueObject\Address;
 use App\Entity\ValueObject\IdentificationDocument;
 use App\Repository\SubjectRepository;
