@@ -15,12 +15,12 @@ class DashboardController extends AbstractDashboardController
 {
     public function index(): Response
     {
-        return parent::index();
+        //return parent::index();
 
         // Option 1. You can make your dashboard redirect to some common page of your backend
         //
         // 1.1) If you have enabled the "pretty URLs" feature:
-        // return $this->redirectToRoute('admin_user_index');
+        return $this->redirectToRoute('admin_invoice_index');
         //
         // 1.2) Same example but using the "ugly URLs" that were used in previous EasyAdmin versions:
         // $adminUrlGenerator = $this->container->get(AdminUrlGenerator::class);

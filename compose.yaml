@@ -7,7 +7,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-vG7r9yL2qP4sZ8wHPt3KcR1u}
       POSTGRES_USER: ${POSTGRES_USER:-app}
     ports:
-      - "127.0.0.1:5432:5432"
+      - "127.0.0.1:5433:5433"
     healthcheck:
       test: ["CMD", "pg_isready", "-d", "${POSTGRES_DB:-isofactu}", "-U", "${POSTGRES_USER:-app}"]
       timeout: 5s
