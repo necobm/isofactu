@@ -36,7 +36,7 @@ export default function Dashboard() {
   return (
     <div className="space-y-6 max-w-screen-xl mx-auto">
       {/* Stats row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
         <StatCard
           title="Ingresos Mensuales"
           value="€12.450,00"
@@ -64,15 +64,6 @@ export default function Dashboard() {
           icon={<ClockIcon />}
           iconBg="bg-amber-50"
           iconColor="text-amber-500"
-        />
-        <StatCard
-          title="Clientes Activos"
-          value="24"
-          subtitle="Este trimestre"
-          trend={12.5}
-          icon={<UsersIcon />}
-          iconBg="bg-emerald-50"
-          iconColor="text-emerald-600"
         />
       </div>
 
