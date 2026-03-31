@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Entity;
+namespace App\Invoicing\Entity;
 
-use App\Repository\InvoiceLineRepository;
+use App\Invoicing\Repository\InvoiceLineRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 

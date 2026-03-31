@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace App\Entity\ValueObject;
+namespace App\Invoicing\Entity\ValueObject;
 
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping\Column;

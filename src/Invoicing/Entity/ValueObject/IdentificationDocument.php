@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace App\Entity\ValueObject;
+namespace App\Invoicing\Entity\ValueObject;
 
-use App\Entity\DocumentType;
+use App\Invoicing\Entity\DocumentType;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Embeddable;

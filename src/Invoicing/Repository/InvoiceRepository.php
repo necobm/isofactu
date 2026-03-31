@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repository;
+namespace App\Invoicing\Repository;
 
-use App\Entity\Invoice;
+use App\Invoicing\Entity\Invoice;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 

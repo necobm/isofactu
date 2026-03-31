@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Entity;
+namespace App\Invoicing\Entity;
 
-use App\Entity\DocumentType;
-use App\Entity\ValueObject\Address;
-use App\Entity\ValueObject\IdentificationDocument;
-use App\Repository\SubjectRepository;
+use App\Invoicing\Entity\DocumentType;
+use App\Invoicing\Entity\ValueObject\Address;
+use App\Invoicing\Entity\ValueObject\IdentificationDocument;
+use App\Invoicing\Repository\SubjectRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
